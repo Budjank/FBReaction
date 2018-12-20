@@ -62,7 +62,7 @@ def react():
         asu = requests.post("https://graph.facebook.com/"+cok['id']+"/reactions", data = params).text
         if "true" in asu:
             try:
-                print warna.hijau+"Berhasil "+warna.ungu+"=> "+warna.biru+"["+warna.merah+cok['id']+warna.hijau+"] "+cok['message']
+                print warna.hijau+"Berhasil "+warna.ungu+"=> "+warna.biru+"["+warna.merah+cok['id']+warna.biru+"] "+cok['message']
             except KeyError:
                 print warna.merah+"Gagal"
         else:
